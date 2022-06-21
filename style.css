@@ -200,8 +200,16 @@ footer li > a:hover{
     grid-template-columns: repeat(2, 1fr);
     padding: 3rem 0;
     transition: all .4s ease-in-out;
-
-    
    }
-   
+   .recipe #recipe{
+    position: relative;
+    width: inherit;
+    display: grid;
+    text-align: justify;
+   }
+   .recipe  #ingredients{
+    position: relative;
+    text-align: r;
+    font-size: 1rem;
+   }
    
