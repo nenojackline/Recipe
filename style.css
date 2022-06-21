@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   }
+   
+   .body {
+    background-color: aqua;
+   }/*banner style*/
+   .banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    
+   }
+   
+    header{
+    position: fixed;
+    top: 0;
+    width: inherit;
+    height: 15vh;
+    background-color: rgb(253, 18, 38);
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   }
+   *logo*/
+.banner .logo{
+ padding: 1rem;
+}
+.banner .logo p{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+   }
+   .banner .logo p {
+    color: rgb(5, 0, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+.nav-btn i {
+    font-size: 1.25rem;
+}
+   
+   /*navlinks*/
+   .banner .navlinks{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30%;
+   
+   }
+   
+   .banner .navlinks a{
+    color: rgb(243, 240, 240);
+    padding: 0 2.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+   }
+   
+   .banner .navlinks a:hover{
+    color: rgb(0, 0, 0);
+   }
+   
+   
+   section{
+    position: relative;
+    width: inherit;
+    min-height: 85vh;
+    top: 15vh;
+    transition: all .4s ease-in-out;
+   }
+   
+   section .home{
+    position: relative;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   
+   .home .left_home{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   }
+   
+   .home .left_home img{
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+    border: 2px solid blueviolet;
+    border-radius: 20%;
+   }
+   
+   .home .right_home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-right: 10rem;
+   }
+ 
+   .home .right_home span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+   }
+   
+   .home .right_home h4{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+   }
+   
+   .home .right_home p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-bottom: 1rem;
+   }
+   
+   
+   .home .right_home .btn > button{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(19, 10, 34);
+    color: #ffff;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+   }
+   
+   .home .right_home .btn > button:hover{
+    background-color: #ffff;
+    border: 1px solid rgb(19, 10, 34);
+    color: rgb(19, 10, 34);
+    font-weight: bold;
+   }
+
+   .subhead{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: rgb(64, 11, 148);
+   }
+
+   .recipe{
+    position: relative;
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 0;
+    transition: all .4s ease-in-out;
+
+    
+   }
+   
+   
