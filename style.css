@@ -124,3 +124,33 @@ body, .container {
     justify-content: center;
     align-items: center;
   }/*# sourceMappingURL=styles.css.map */
+  /* footer */
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+footer h3{
+  font-size: 30px;
+  font-weight: lighter;
+}
+footer ul{
+  list-style-type: none;
+  line-height: 40px;
+}
+footer li > a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+}
+footer li > a:hover{
+  color: orange;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+  text-align: left;
+}
