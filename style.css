@@ -1,215 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap');
 *{
-    padding: 0;
+    font-family: 'Newsreader', serif;
+}
+body{
     margin: 0;
-    box-sizing: border-box;
-   }
-   
-   .body {
-    background-color: aqua;
-   }/*banner style*/
-   .banner{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    
-   }
-   
-    header{
-    position: fixed;
-    top: 0;
-    width: inherit;
-    height: 15vh;
-    background-color: rgb(253, 18, 38);
-    color: #ffff;
+    padding: 0;
+}
+.navbar{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    z-index: 1;
-   }
-   *logo*/
-.banner .logo{
- padding: 1rem;
+    justify-content: space-around;
+    background: crimson;
 }
-.banner .logo p{
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: 2rem;
-   }
-   .banner .logo p {
-    color: rgb(5, 0, 8);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   }
-.nav-btn i {
-    font-size: 1.25rem;
-}
-   
-   /*navlinks*/
-   .banner .navlinks{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: 30%;
-   
-   }
-   
-   .banner .navlinks a{
-    color: rgb(243, 240, 240);
-    padding: 0 2.5rem;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: all .4s ease-in-out;
-   }
-   
-   .banner .navlinks a:hover{
-    color: rgb(0, 0, 0);
-   }
-   /* footer */
-footer{
-    background-color: black;
-    color: white;
-    position: fixed;
-    bottom:  0;
-    width: 100%;
-    height: 15vh;
+.navbar ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    z-index: 1;
-}
+    list-style: none;
 
-footer h3{
+}
+.navbar li a{
+    margin-left: 50px;
     font-size: 20px;
-    font-weight: lighter;
-}
-
-footer ul{
-    list-style-type:none;
-    line-height: 2gi0px;
-}
-
-footer li > a{
     text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
+    color: white;
 }
 
-footer li > a:hover{
-    color: orange;
+.navbar button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 20px;
 }
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content:space-evenly;
-    text-align: left;
-} 
-   
-   section{
+form input[type=text]{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+body, .container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(248, 246, 246);
+  }
+.head-title {
     position: relative;
-    width: inherit;
-    min-height: 70vh;
-    top: 15vh;
-    transition: all .4s ease-in-out;
-   }
-   
-   section .home{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+    color: rgb(35, 6, 63);
+  }
+  .recipes {
     position: relative;
-    height: 85vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   }
-   
-   .home .left_home{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin: 0 16rem;
+  }
+  .recipes .recipe {
     position: relative;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-   }
-   
-   .home .left_home img{
+    border-radius: 10px;
+    background-color: white;
+    transform: scaleY(1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+    transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe:hover {
+    transform: translateY(-5px);
+    transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
-    width: 600px;
-    height: 600px;
-    border: 2px solid blueviolet;
-    border-radius: 20%;
-   }
-   
-   .home .right_home{
+    filter: grayscale(0.3);
+  }
+  .recipes .recipe img:hover {
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(0);
+  }
+  .recipes .recipe h5 {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+  }
+  .recipes .recipe p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+  }
+  .recipes .recipe .ctrls {
     position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: top;
-    margin-right: 10rem;
-   }
- 
-   .home .right_home span{
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 1rem 0;
-   }
-   
-   .home .right_home h4{
-    font-size: 3rem;
-    padding-bottom: 1rem;
-   }
-   
-   .home .right_home p{
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    padding-bottom: 1rem;
-   }
-   
-   
-   .home .right_home .btn > button{
-    width: 250px;
-    height: 60px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .recipes .recipe .ctrls input {
+    width: 230px;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe .ctrls input:hover {
+    background-color: rgba(6, 7, 26, 0.493);
+    color: white;
+    transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe .ctrls i {
+    position: relative;
+    border: 1px solid rgba(12, 6, 65, 0.368627451);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(19, 10, 34);
-    color: #ffff;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-   }
-   
-   .home .right_home .btn > button:hover{
-    background-color: #ffff;
-    border: 1px solid rgb(19, 10, 34);
-    color: rgb(19, 10, 34);
-    font-weight: bold;
-   }
-
-   .subhead{
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 2.5rem;
-    color: rgb(64, 11, 148);
-   }
-
-   .recipe{
-    position: relative;
-    width: inherit;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 3rem 0;
-    transition: all .4s ease-in-out;
-   }
-   .recipe #recipe{
-    position: relative;
-    width: inherit;
-    display: grid;
-    text-align: justify;
-   }
-   .recipe  #ingredients{
-    position: relative;
-    text-align: r;
-    font-size: 1rem;
-   }
-   
+  }/*# sourceMappingURL=styles.css.map */
