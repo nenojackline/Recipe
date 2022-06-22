@@ -1,9 +1,8 @@
-*{
-    font-family: 'Newsreader', serif;
-}
-body{
-    margin: 0;
-    padding: 0;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
 }
 .navbar{
     display: flex;
@@ -11,6 +10,7 @@ body{
     align-items: center;
     justify-content: space-around;
     background: crimson;
+    min-height: 15vh;
 }
 .navbar ul{
     display: flex;
@@ -40,7 +40,7 @@ form input[type=text]{
 body, .container {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(248, 246, 246);
+    background-color:aqua;
   }
 .head-title {
     position: relative;
@@ -54,7 +54,7 @@ body, .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
-    margin: 0 16rem;
+    margin: 0 5rem;
   }
   .recipes .recipe {
     position: relative;
@@ -71,8 +71,8 @@ body, .container {
   .recipes .recipe img {
     width: 100%;
     height: 30vh;
-    border-radius: 10px 10px 0 0;
-    object-fit: cover;
+    border-radius: 10px 10px 0 0 ;
+    object-fit:cover;
     filter: grayscale(0.3);
   }
   .recipes .recipe img:hover {
@@ -129,7 +129,8 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
+  
 }
 footer h3{
   font-size: 30px;
@@ -137,7 +138,7 @@ footer h3{
 }
 footer ul{
   list-style-type: none;
-  line-height: 40px;
+  line-height: 20px;
 }
 footer li > a{
   text-decoration: none;
@@ -153,4 +154,5 @@ footer li > a:hover{
   align-items: baseline;
   justify-content: space-around;
   text-align: left;
+
 }

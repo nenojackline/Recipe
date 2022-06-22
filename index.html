@@ -16,18 +16,21 @@
 <body>
 
     <!--navigation bar-->
-    <nav class="navbar">
+    <div class="navbar" id="navbar">
         <ul>
-            <li><a href="" id="home">HOME</a></li>
-            <li><a href="" id="sports">RECIPES</a></li>
-            <li><a href="" id="business">CONTACT US</a></li>
-            
-        </ul>
+            <li><a href="#home" class="active">HOME</a></li>
+            <li><a href="#recipe" >RECIPES</a></li>
+            <li><a href="#contact-us" >CONTACT US</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </ul> 
         <form action="" method="post">
             <input type="text" id="search" placeholder="search...">
             <button class="search-recipes" type="button" id="search-btn">Search</button>
-        </form>
-    </nav>
+        </form>      
+    </div>    
+        
     <h1 class="head-title">Recipes</h1>
     <div class="recipes" id="demo">
        <!--updated from dom-->
