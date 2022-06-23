@@ -1,159 +1,405 @@
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; 
-}
-.navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background: crimson;
-    min-height: 15vh;
-}
-.navbar ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-
-}
-.navbar li a{
-    margin-left: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.navbar button{
-    border: none;
-    border-radius: 5px;
-    padding: 10px 30px;
-    font-size: 20px;
-}
-form input[type=text]{
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-}
-body, .container {
-    height: 100vh;
-    width: 100vw;
-    background-color:aqua;
-  }
-  
-.head-title {
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    padding: 3rem 0;
-    color: rgb(35, 6, 63);
-  }
-  .recipes {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    margin: 0 5rem;
-  }
-  .recipes .recipe {
-    position: relative;
-    border-radius: 10px;
-    background-color: white;
-    transform: scaleY(1);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
-    transition: all 0.4s ease-in-out;
-  }
-  .recipes .recipe:hover {
-    transform: translateY(-5px);
-    transition: all 0.4s ease-in-out;
-  }
-  .recipes .recipe img {
-    width: 100%;
-    height: 30vh;
-    border-radius: 10px 10px 0 0 ;
-    object-fit:cover;
-    filter: grayscale(0.3);
-  }
-  .recipes .recipe img:hover {
-    transition: all 0.4s ease-in-out;
-    filter: grayscale(0);
-  }
-  .recipes .recipe h5 {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-    text-transform: capitalize;
-  }
-  .recipes .recipe p {
-    font-size: 1.2rem;
-    padding: 0 1rem;
-    line-height: 1.5rem;
-  }
-  .recipes .recipe .ctrls {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 0.5rem;
-  }
-  .recipes .recipe .ctrls input {
-    width: 230px;
-    height: 45px;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 1rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-  }
-  .recipes .recipe .ctrls input:hover {
-    background-color: rgba(6, 7, 26, 0.493);
-    color: white;
-    transition: all 0.4s ease-in-out;
-  }
-  .recipes .recipe .ctrls i {
-    position: relative;
-    border: 1px solid rgba(12, 6, 65, 0.368627451);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }/*# sourceMappingURL=styles.css.map */
-  /* footer */
-footer{
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 30px;
-  
-}
-footer h3{
-  font-size: 30px;
-  font-weight: lighter;
-}
-footer ul{
-  list-style-type: none;
-  line-height: 20px;
-}
-footer li > a{
-  text-decoration: none;
-  color: aliceblue;
-  font-size: 20px;
-}
-footer li > a:hover{
-  color: orange;
-}
-.footer{
+ }
+ .banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 246, 246)
+ }
+ 
+ header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 15vh;
+  background-color:aquamarine;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.096);
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: space-around;
-  text-align: left;
-
-}
+  align-items: center;
+  z-index: 1;
+ }
+ header .navlinks{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
+ header .navlinks > a{
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  margin-right: 4rem;
+  text-decoration: none;
+  color: rgb(8, 6, 22);
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+ }
+ 
+ header .navlinks > a:hover{
+  transition: all 0.4s ease-in-out;
+  color: rgb(70, 16, 121);
+  border-bottom: 1px solid;
+ }
+ 
+ header .navlinks > i{
+  display: none;
+ }
+ 
+ header form{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+ }
+ header form > input{
+  width: 320px;
+  padding: .6rem;
+  font-size: 1.1rem;
+  outline: none;
+ }
+ 
+ header form > input[type="submit"]{
+  width: 150px;
+  border: none;
+  background-color: rgb(117, 214, 37);
+  cursor: pointer;
+ }
+ 
+ /*sections*/
+ section{
+  position: relative;
+  top: 15vh;
+  width: inherit;
+  min-height: 90vh;
+  padding-bottom: 5rem
+ }
+ 
+ /*home page*/
+ section .home{
+  position: absolute; 
+  display: grid; /*grid*/
+  grid-template-columns: repeat(2, 1fr);
+  height: inherit;
+  
+ }
+ 
+ section .home .side1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10rem
+ }
+ 
+ section .home .side1 > h1{
+  font-size: 4rem;
+ }
+ 
+ section .home .side1 > p{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 1rem 0;
+ }
+ 
+ section .home .side1 > button{
+  width: 300px;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255, 177, 33);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+ 
+ }
+ section .home .side1 > button:hover{
+  transition: all 0.4s ease-in-out;
+  background-color: rgb(247, 245, 243);
+  color: #000;
+  border: 1px solid rgb(255, 177, 33);
+ }
+ 
+ section .home .side2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ section .home .side2 > img{
+  width: 500px;
+  padding: 11rem 0;
+ }
+ 
+ /*contact page*/
+ section .contact{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  display: none; /*flex*/
+ }
+ section .contact > img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+ }
+ 
+ section .contact .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 4, 15, 0.616);
+  z-index: 0;
+ }
+ 
+ section .contact .content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #ffff;
+  z-index: 0;
+  
+ }
+ 
+ section .contact .content > h1{
+  padding: 3.5rem 0 1rem 0;
+  font-size: 2.5rem;
+ }
+ section .contact .content > span{
+  font-size: 1.2rem;
+  padding-bottom: 3rem;
+ }
+ section .contact .content > form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ section .contact .content form > input, textarea{
+  position: relative;
+  width: 500px;
+  height: 60px;
+  border: 1px solid rgba(3, 5, 32, 0.753);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: rgba(3, 5, 32, 0.753);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.603);
+  padding: 0 2rem;
+ }
+ section .contact .content form >textarea{
+  height: 200px;
+  padding-top: 2rem;
+ } 
+ section .contact .content form > input[type="submit"]{
+  border: none;
+  background-color: rgb(255, 177, 33);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+ }
+ 
+ section .contact .content form > input[type="submit"]:hover{
+  transition: all 0.4s ease-in-out;
+  background-color:rgba(7, 4, 15, 0.616);
+  border: 2px solid rgb(255, 177, 33);
+ 
+ }
+ 
+ 
+ /*recipe */
+  section .recipe-title {
+  display: none;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0;
+  color: rgb(35, 6, 63);
+  }
+  section .recipes {
+  position: relative;
+  display: none; /*grid*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin: 0 20rem;
+  }
+ 
+  .recipes .recipe {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  transform: scaleY(1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+  transition: all 0.4s ease-in-out;
+  }
+  
+  .recipes .recipe:hover {
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px 10px 0 0 ;
+  object-fit:cover;
+  filter: grayscale(0.3);
+  }
+  .recipes .recipe img:hover {
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(0);
+  }
+  .recipes .recipe h5 {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  }
+  .recipes .recipe p {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+  }
+  .recipes .recipe .ctrls {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+  }
+  .recipes .recipe .ctrls input {
+  width: 230px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe .ctrls input:hover {
+  background-color: rgba(6, 7, 26, 0.493);
+  color: white;
+  transition: all 0.4s ease-in-out;
+  }
+  .recipes .recipe .ctrls i {
+  position: relative;
+  border-radius: 50%;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+ 
+ 
+  /* footer */
+ footer{
+  position: relative;
+  display: flex;
+  top: 15vh; /**/
+  flex-direction: column;
+  background-color: rgb(4, 4, 29);
+  color: rgb(231, 227, 227);
+ }
+ 
+ footer .footlinks{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 0;
+  grid-gap: 2rem;
+ }
+ 
+ footer .footlinks .link1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rem;
+  justify-content: space-evenly
+ }
+ footer .footlinks .link1 > span{
+  font-size: 1.3rem;
+  padding: 2rem 0;
+ }
+ 
+ footer .footlinks .link1 .icons{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+ }
+ 
+ .footlinks .link1 .icons > .icon{
+  border: 1px solid;
+  color: red;
+ }
+ footer .footlinks .link2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rem;
+ }
+ 
+ footer .footlinks .link2 > span{
+  font-size: 1.3rem;
+  padding: 1rem 0;
+ }
+ 
+ footer .footlinks .link2 > a{
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+ }
+ 
+ footer .footlinks .link2 > a:hover{
+  color: rgb(172, 167, 167);
+  transition: all 0.4s ease-in-out;
+ }
+ footer >span{
+  position: relative;
+  text-align: center;
+  padding: 2rem 0;
+ 
+ }
+ footer span > b{
+  color: blueviolet;
+ }
+ 
+ /*global styles*/
+ /*display none to all sections*/
+ .sec1{
+  display: none; /*grid*/
+ }
+ .sec2{
+  display: none; /*grid*/
+ }
+ .sec3{
+  display: none; /*flex*/
+ }
+ 
+ 
+ /*display for active section*/
+ .active{
+  display: block !important;
+ }
+ 
+ header .navlinks > .active-btn{
+  color: rgb(70, 16, 121);
+  border-bottom: 1px solid;
+ }
