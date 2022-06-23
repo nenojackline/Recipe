@@ -237,7 +237,7 @@
   display: none; /*grid*/
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
-  margin: 0 20rem;
+  margin: 0 10rem;
   }
  
   .recipes .recipe {
