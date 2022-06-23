@@ -1,109 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
-        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="style.css">
-        <title>Recipe Website</title>
-    </head>
-    <body>
-        <div class="banner">
- <!--navigation bar-->
+            integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Website</title>
+</head>
+<body>
+    <div class="banner">
+        <!--navigation bar-->
         <header class="navbar">
             <div class="navlinks">
                 <a href="#" class="control active-btn" data-id= "home">Home</a>
                 <a href="#" class= "control" data-id="recipe">Recipes</a>
                 <a href="#" class="control" data-id="contact">Contact us</a>
                 <i class="fa fa-bars" id="menu"d></i>
-        </div>
- 
-        <form action="">
-            <input type="search" name="search" id="search" placeholder="Search recipe" >
-             <input type="submit" value="Seach">
-        </form>
- 
-
-    </header>
-
- 
- <!--section-->
-    <section class="sec" >
- <!--Home section page-->
-        <div class="home sec1" id="home">
-            <div class="side1">
-            <h1>Explore a variety of recipes</h1>
-            <p>
-                Recipe app procides with a variety of recipes to explore and try out with a detailed step-by-step procedure and an outline of all the necessary ingridients.
-            </p>
-            <button id="explore">Find recipe</button>
             </div>
-            <div class="side2">
-                <img src="./images/istockphoto1.jpg" alt="img" width="200px">
-            </div>
- 
-        </div>
+            
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Search recipe" >
+                <input type="submit" value="Seach">
+            </form>
+            
 
- <!--recipe page-->
-        <h1 class="recipe-title">Recipes</h1>
+        </header>
+
+        
+        <!--section-->
+        <section class="sec" >
+            <!--Home section page-->
+            <div class="home sec1" id="home">
+                <div class="side1">
+                    <h1>Explore a variety of recipes</h1>
+                    <p>
+                        Recipe app procides with a variety of recipes to explore and try out with a detailed step-by-step procedure and an outline of all the necessary ingridients.
+                    </p>
+                    <button id="explore">Find recipe</button>
+                </div>
+                <div class="side2">
+                    <img src="./images/istockphoto1.jpg" alt="img" width="200px">
+                </div>
+        
+            </div>
+
+            <!--recipe page-->
+            <h1 class="recipe-title">Recipes</h1>
             <div class="recipes sec2" id="recipe"">
- <!--loaded by DOM-->
+                <!--loaded by DOM-->
             </div>
 
- <!--Contact us page-->
-        <div class="contact sec3" id="contact">
-            <img src="./images/istockphoto2.jpg" alt="back-img" width="200px">
-        <div class="overlay"> </div>
+            <!--Contact us page-->
+            <div class="contact sec3" id="contact">
+                <img src="./images/istockphoto2.jpg" alt="back-img" width="200px">
+                <div class="overlay"> </div>
 
-        <div class="content">
-            <h1>Contact Us</h1>
-            <span>Reach out to us today incase you have any further inquiries</span>
-        <form action="">
-            <input type="text" placeholder="Enter your name" name="fullName">
-            <input type="text" placeholder="Subject" name="subject">
-            <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter message" name="message" ></textarea>
- 
-            <input type="submit" value="Submit">
-        </form>
-        </div>
-        </div>
-    </section>
-
- <!--footer section-->
-    <footer>
-        <div class="footlinks">
-            <div class="link1">
-                <span>Contact us</span>
-            <div class="icons">
-                <i id="icon" class="fab fa-facebook"></i>
-                <i id="icon" class="fab fa-twitter"></i>
-                <i id="icon" class="fas fa-rss"></i>
+                <div class="content">
+                    <h1>Contact Us</h1>
+                    <span>Reach out to us today incase you have any further inquiries</span>
+                    <form action="">
+                        <input type="text" placeholder="Enter your name" name="fullName">
+                        <input type="text" placeholder="Subject" name="subject">
+                        <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter message" name="message" ></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="link2">
-            <span>More Links</span>
-                <a href="">support</a>
-                <a href="">privacy</a>
-                <a href="">Terms of Use</a>
-                <a href="">Licence</a>
-        </div>
-    </div>
+        </section>
+
+        <!--footer section-->
+        <footer>
+            <div class="footlinks">
+                <div class="link1">
+                    <span>Contact us</span>
+                    <div class="icons">
+                        <i id="icon" class="fab fa-facebook"></i>
+                        <i id="icon" class="fab fa-twitter"></i>
+                        <i id="icon" class="fas fa-rss"></i>
+                    </div>
+                </div>
+                <div class="link2">
+                    <span>More Links</span>
+                    <a href="">support</a>
+                    <a href="">privacy</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Licence</a>
+                </div>
+            </div>
             <span class="copyright"><i class="fas fa-copyright"></i> 2022 | All rights reserved | <b>made by Jackie</b> </span>
         </footer>
     </div> 
- <!--recipe---
- <h1 class="head-title">Recipes</h1>
- <div class="recipes" id="demo">
- <!--updated from dom--
- 
- </div> -->
+    <!--recipe---
+    <h1 class="head-title">Recipes</h1>
+    <div class="recipes" id="demo">
+       <!--updated from dom--
+        
+    </div> -->
 
     <script src="app.js"></script>
-    </body>
+</body>
 </html>
