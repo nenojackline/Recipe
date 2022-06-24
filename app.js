@@ -109,7 +109,7 @@
                     console.log("submitted search");
 
                     //function to querysearch from api
-                    notifyBoundary("Search not available");
+                    notifyBoundary("Search function coming soon!");
                 }
 
                 //contact us
